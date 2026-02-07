@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebHall — Where Your Work Takes Center Stage</title>
+
+    <!-- Primary meta (kept EN; page body is bilingual via toggle) -->
+    <meta
+      name="description"
+      content="WebHall designs and launches modern websites that put your business front and center — from design to deployment."
+    />
+
+    <!-- Social preview -->
+    <meta property="og:title" content="WebHall — Where Your Work Takes Center Stage" />
+    <meta
+      property="og:description"
+      content="Modern websites that put your business front and center — from design to deployment."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <!-- Header -->
+    <header class="header" id="top">
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="WebHall Home">
+          <!-- Replace with your logo in /assets/logo.png if you want -->
+          <span class="brand__mark" aria-hidden="true">W</span>
+          <span class="brand__name">WebHall</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="#services" data-i18n="nav_services">Services</a>
+          <a href="#work" data-i18n="nav_work">Work</a>
+          <a href="#pricing" data-i18n="nav_packages">Packages</a>
+          <a href="#contact" data-i18n="nav_contact">Contact</a>
+        </nav>
+
+        <div class="header__actions">
+          <!-- Language toggle -->
+          <div class="lang" role="group" aria-label="Language toggle">
+            <button class="lang__btn is-active" id="langEN" type="button">EN</button>
+            <button class="lang__btn" id="langES" type="button">ES</button>
+          </div>
+
+          <a class="btn btn--ghost hide-on-mobile" href="#services" data-i18n="cta_view_services">View services</a>
+          <a class="btn btn--primary" href="#contact" data-i18n="cta_get_quote">Get a quote</a>
+
+          <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" type="button">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="mobile" id="mobileNav" hidden>
+        <div class="container mobile__inner">
+          <a href="#services" data-i18n="nav_services">Services</a>
+          <a href="#work" data-i18n="nav_work">Work</a>
+          <a href="#pricing" data-i18n="nav_packages">Packages</a>
+          <a href="#contact" data-i18n="nav_contact">Contact</a>
+          <a class="btn btn--primary mobile__cta" href="#contact" data-i18n="cta_get_quote">Get a quote</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="pill">thewebhall.com</p>
+
+            <h1 data-i18n="hero_headline">Where Your Work Takes Center Stage.</h1>
+
+            <p class="subhead" data-i18n="hero_subhead">
+              We design and launch modern websites that put your business front and center —
+              from structure and design to domain, hosting, and launch.
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#contact" data-i18n="cta_get_quote">Get a quote</a>
+              <a class="btn btn--ghost" href="#services" data-i18n="cta_view_services">View services</a>
+            </div>
+
+            <div class="trust">
+              <div class="trust__item">
+                <span class="dot"></span> <span data-i18n="trust_1">Fast, mobile-first builds</span>
+              </div>
+              <div class="trust__item">
+                <span class="dot"></span> <span data-i18n="trust_2">Clean handoff + easy updates</span>
+              </div>
+              <div class="trust__item">
+                <span class="dot"></span> <span data-i18n="trust_3">Everything connected</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero visual -->
+          <div class="hero__visual" aria-hidden="true">
+            <div class="logo-card">
+              <div class="symbol">W</div>
+              <div class="symbol__glow"></div>
+            </div>
+
+            <div class="mini-cards">
+              <div class="mini-card">
+                <div class="mini-card__k" data-i18n="mini_k_1">Setup</div>
+                <div class="mini-card__v" data-i18n="mini_v_1">Domain + DNS</div>
+              </div>
+              <div class="mini-card">
+                <div class="mini-card__k" data-i18n="mini_k_2">Launch</div>
+                <div class="mini-card__v" data-i18n="mini_v_2">Live + Secure</div>
+              </div>
+              <div class="mini-card">
+                <div class="mini-card__k" data-i18n="mini_k_3">Support</div>
+                <div class="mini-card__v" data-i18n="mini_v_3">On-demand</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section__head">
+            <h2 data-i18n="services_title">Services designed to support your growth</h2>
+            <p data-i18n="services_desc">
+              Pick what you need today — and scale later. Every project is built with performance, clarity,
+              and launch readiness in mind.
+            </p>
+          </div>
+
+          <div class="grid grid--3">
+            <article class="card">
+              <h3 data-i18n="srv_1_title">Landing Pages</h3>
+              <p data-i18n="srv_1_desc">High-converting single-page sites for offers, events, and launches.</p>
+              <p class="card__meta" data-i18n="srv_1_meta">Best for: lead capture • promos • quick launches</p>
+            </article>
+
+            <article class="card">
+              <h3 data-i18n="srv_2_title">Business Websites</h3>
+              <p data-i18n="srv_2_desc">Clean multi-page websites that present your brand clearly and professionally.</p>
+              <p class="card__meta" data-i18n="srv_2_meta">Best for: services • portfolios • local businesses</p>
+            </article>
+
+            <article class="card">
+              <h3 data-i18n="srv_3_title">Website Redesign</h3>
+              <p data-i18n="srv_3_desc">Modernize your site with better structure, speed, and a cleaner look.</p>
+              <p class="card__meta" data-i18n="srv_3_meta">Best for: outdated sites • slow pages • messy layouts</p>
+            </article>
+
+            <article class="card">
+              <h3 data-i18n="srv_4_title">E-commerce Setup</h3>
+              <p data-i18n="srv_4_desc">Shopify or WooCommerce stores ready to sell with a clean checkout flow.</p>
+              <p class="card__meta" data-i18n="srv_4_meta">Best for: products • drops • small catalogs</p>
+            </article>
+
+            <article class="card">
+              <h3 data-i18n="srv_5_title">SEO Basics + Google Business</h3>
+              <p data-i18n="srv_5_desc">Solid foundations for discoverability: on-page SEO + local visibility setup.</p>
+              <p class="card__meta" data-i18n="srv_5_meta">Best for: local search • map results • credibility</p>
+            </article>
+
+            <article class="card">
+              <h3 data-i18n="srv_6_title">Maintenance + Updates</h3>
+              <p data-i18n="srv_6_desc">On-demand edits or a monthly plan to keep everything fresh and working.</p>
+              <p class="card__meta" data-i18n="srv_6_meta">Best for: busy owners • peace of mind</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why -->
+      <section class="section section--alt">
+        <div class="container">
+          <div class="split">
+            <div>
+              <h2 data-i18n="why_title">Why WebHall</h2>
+              <p data-i18n="why_desc">
+                WebHall isn’t just a “website.” It’s the main hall where your brand lives —
+                organized, connected, and ready for people to walk in.
+              </p>
+            </div>
+
+            <div class="checklist">
+              <div class="check">
+                <span class="check__icon">✓</span>
+                <div>
+                  <strong data-i18n="why_1_title">Strategy-first structure</strong>
+                  <p data-i18n="why_1_desc">Clear sections, strong hierarchy, and purposeful layouts.</p>
+                </div>
+              </div>
+
+              <div class="check">
+                <span class="check__icon">✓</span>
+                <div>
+                  <strong data-i18n="why_2_title">Everything connected</strong>
+                  <p data-i18n="why_2_desc">Domain, DNS, forms, analytics — set up cleanly from day one.</p>
+                </div>
+              </div>
+
+              <div class="check">
+                <span class="check__icon">✓</span>
+                <div>
+                  <strong data-i18n="why_3_title">Modern + mobile-first</strong>
+                  <p data-i18n="why_3_desc">Fast, responsive, and built to look great on every screen.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How it works -->
+      <section class="section" id="work">
+        <div class="container">
+          <div class="section__head">
+            <h2 data-i18n="how_title">How it works</h2>
+            <p data-i18n="how_desc">No complicated process. No endless calls. Just a clean build and a confident launch.</p>
+          </div>
+
+          <div class="grid grid--3">
+            <article class="step">
+              <div class="step__num">1</div>
+              <h3 data-i18n="how_1_title">Share your vision</h3>
+              <p data-i18n="how_1_desc">Fill a quick brief (3 minutes). Send links, notes, and what you want your site to do.</p>
+            </article>
+
+            <article class="step">
+              <div class="step__num">2</div>
+              <h3 data-i18n="how_2_title">We design & build</h3>
+              <p data-i18n="how_2_desc">You review a clean draft, we refine quickly, and connect everything behind the scenes.</p>
+            </article>
+
+            <article class="step">
+              <div class="step__num">3</div>
+              <h3 data-i18n="how_3_title">Your site takes the stage</h3>
+              <p data-i18n="how_3_desc">We launch your website live, secure, and ready — with a simple handoff you can manage.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Packages -->
+      <section class="section section--alt" id="pricing">
+        <div class="container">
+          <div class="section__head">
+            <h2 data-i18n="pkg_title">Packages</h2>
+            <p data-i18n="pkg_desc">Simple tiers. Clear outcomes. Add-ons available when you need them.</p>
+          </div>
+
+          <div class="pricing">
+            <article class="price-card">
+              <h3 data-i18n="pkg_1_name">Starter</h3>
+              <p class="price-card__tag" data-i18n="pkg_1_tag">Landing Page</p>
+              <p class="price"><span data-i18n="starting_at">Starting at</span> <strong>$299</strong></p>
+              <ul>
+                <li data-i18n="pkg_1_li_1">1-page modern layout</li>
+                <li data-i18n="pkg_1_li_2">Mobile-first design</li>
+                <li data-i18n="pkg_1_li_3">Contact / lead form</li>
+                <li data-i18n="pkg_1_li_4">Basic SEO setup</li>
+              </ul>
+              <a class="btn btn--primary" href="#contact" data-i18n="cta_request_quote">Request quote</a>
+            </article>
+
+            <article class="price-card price-card--featured">
+              <div class="badge" data-i18n="badge_popular">Most Popular</div>
+              <h3 data-i18n="pkg_2_name">Business</h3>
+              <p class="price-card__tag" data-i18n="pkg_2_tag">Multi-page Website</p>
+              <p class="price"><span data-i18n="starting_at">Starting at</span> <strong>$699</strong></p>
+              <ul>
+                <li data-i18n="pkg_2_li_1">Up to 5 pages</li>
+                <li data-i18n="pkg_2_li_2">Clean navigation + structure</li>
+                <li data-i18n="pkg_2_li_3">Forms + analytics</li>
+                <li data-i18n="pkg_2_li_4">Domain + launch support</li>
+              </ul>
+              <a class="btn btn--primary" href="#contact" data-i18n="cta_request_quote">Request quote</a>
+            </article>
+
+            <article class="price-card">
+              <h3 data-i18n="pkg_3_name">Pro</h3>
+              <p class="price-card__tag" data-i18n="pkg_3_tag">E-com / Advanced</p>
+              <p class="price"><span data-i18n="starting_at">Starting at</span> <strong>$1,499</strong></p>
+              <ul>
+                <li data-i18n="pkg_3_li_1">Store setup or advanced site</li>
+                <li data-i18n="pkg_3_li_2">Payments + products</li>
+                <li data-i18n="pkg_3_li_3">Performance + SEO basics</li>
+                <li data-i18n="pkg_3_li_4">Priority launch timeline</li>
+              </ul>
+              <a class="btn btn--primary" href="#contact" data-i18n="cta_request_quote">Request quote</a>
+            </article>
+          </div>
+
+          <div class="addons">
+            <h3 data-i18n="addons_title">Add-ons</h3>
+            <div class="addons__grid">
+              <div class="addon" data-i18n="addon_1">Extra pages</div>
+              <div class="addon" data-i18n="addon_2">Copywriting</div>
+              <div class="addon" data-i18n="addon_3">Booking / scheduling</div>
+              <div class="addon" data-i18n="addon_4">Email setup</div>
+              <div class="addon" data-i18n="addon_5">Automation (Zapier/Make)</div>
+              <div class="addon" data-i18n="addon_6">Monthly maintenance</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="contact">
+            <div class="contact__copy">
+              <h2 data-i18n="contact_title">Get a quote</h2>
+              <p data-i18n="contact_desc">
+                Tell me what you’re building and what you want your website to do.
+                I’ll respond with the best package + timeline.
+              </p>
+
+              <div class="contact__notes">
+                <div class="note">
+                  <strong data-i18n="contact_note_1_title">No calls required.</strong>
+                  <p data-i18n="contact_note_1_desc">Email is totally fine if you prefer it.</p>
+                </div>
+                <div class="note">
+                  <strong data-i18n="contact_note_2_title">Fast turnaround.</strong>
+                  <p data-i18n="contact_note_2_desc">Most builds launch quickly once content is ready.</p>
+                </div>
+              </div>
+
+              <p class="email">
+                <span data-i18n="contact_email_pref">Prefer email?</span>
+                <a href="mailto:hello@thewebhall.com">hello@thewebhall.com</a>
+              </p>
+            </div>
+
+            <!-- Placeholder form (UI only). You can connect it to Formspree later. -->
+            <form class="form" onsubmit="return false;" aria-label="Quote form">
+              <label>
+                <span data-i18n="form_name">Name</span>
+                <input type="text" name="name" placeholder="Your name" required data-i18n-placeholder="ph_name" />
+              </label>
+
+              <label>
+                <span data-i18n="form_email">Email</span>
+                <input type="email" name="email" placeholder="you@email.com" required data-i18n-placeholder="ph_email" />
+              </label>
+
+              <label>
+                <span data-i18n="form_need">What do you need?</span>
+                <select name="service" required>
+                  <option value="" disabled selected data-i18n="opt_select">Select a service</option>
+                  <option data-i18n="opt_1">Landing Page</option>
+                  <option data-i18n="opt_2">Business Website</option>
+                  <option data-i18n="opt_3">Website Redesign</option>
+                  <option data-i18n="opt_4">E-commerce Setup</option>
+                  <option data-i18n="opt_5">SEO Basics + Google Business</option>
+                  <option data-i18n="opt_6">Maintenance + Updates</option>
+                </select>
+              </label>
+
+              <label>
+                <span data-i18n="form_msg">Tell me about your project</span>
+                <textarea
+                  name="message"
+                  rows="6"
+                  placeholder="Business type, goals, pages needed, examples you like, deadline…"
+                  required
+                  data-i18n-placeholder="ph_msg"
+                ></textarea>
+              </label>
+
+              <button class="btn btn--primary btn--full" type="submit" id="fakeSubmit" data-i18n="form_send">
+                Send request
+              </button>
+
+              <p class="fine" data-i18n="form_fine">
+                This form is a placeholder for now. Next step: connect it to Formspree (free) so submissions go to your email.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <span class="brand__mark" aria-hidden="true">W</span>
+          <div>
+            <strong>WebHall</strong>
+            <div class="muted">thewebhall.com</div>
+          </div>
+        </div>
+
+        <div class="footer__links">
+          <a href="#services" data-i18n="nav_services">Services</a>
+          <a href="#pricing" data-i18n="nav_packages">Packages</a>
+          <a href="#contact" data-i18n="nav_contact">Contact</a>
+          <a href="#top" data-i18n="nav_top">Back to top</a>
+        </div>
+      </div>
+      <div class="container footer__bottom">
+        <span class="muted">© <span id="year"></span> WebHall. <span data-i18n="footer_rights">All rights reserved.</span></span>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
